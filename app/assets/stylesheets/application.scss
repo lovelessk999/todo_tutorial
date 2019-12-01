@@ -14,8 +14,15 @@
  *= require_self
  */
 
+
+//bootstrap
+@import "bootstrap";
+
+//google fonts 
+@import url('https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker&display=swap');
+
  $white_opaque: rgba(250, 250, 250, .3);
- $dark: #1F7972;
+ $dark: #FFFF00;
 
 * {
   box-sizing: border-box;
@@ -31,7 +38,7 @@ body {
   background:     -ms-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 38%, rgba(0,212,255,1) 100%);
   background:      -o-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 38%, rgba(0,212,255,1) 100%);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 38%, rgba(0,212,255,1) 100%);
-  font-family: 'Lato', sans-serif;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .clearfix:before,
@@ -65,8 +72,10 @@ body {
 .todo_list_title {
   text-align: center;
   font-weight: 700;
-  font-size: 1.0rem;
+  font-size: 2.0rem;
   text-transform: uppercase;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 1px 1px 2px black;
   color: white;
   margin: 0;
   a {
@@ -83,8 +92,10 @@ body {
   margin: 0 0 3em 0;
   text-align: center;
   font-size: 0.9em;
-  color: $dark;
+  color: white;
   font-weight: 100;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 1px 1px 2px black;
 }
 
 .index_row {
@@ -113,8 +124,10 @@ body {
       p {
         margin: 0;
         padding: 1em;
-        color: $dark;
+        color: yellow;
         font-weight: 100;
+        font-size: 15px;
+        font-family: 'Open Sans Condensed', sans-serif;
       }
     }
     .trash {
@@ -125,10 +138,10 @@ body {
       padding: 1em 0;
     }
     i {
-      color: white;
+      color: yellow;
       transition: all .4s ease-in-out;
       &:hover {
-        color: $dark;
+        color: red;
       }
     }
   }
@@ -171,7 +184,8 @@ body {
   font-size: 0.8em;
   color: white;
   a {
-    color: white;
+    color: $dark;
+    font-family: 'Permanent Marker', cursive;
   }
 }
 
