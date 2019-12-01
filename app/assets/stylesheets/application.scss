@@ -76,7 +76,7 @@ body {
   text-transform: uppercase;
   font-family: 'Permanent Marker', cursive;
   text-shadow: 1px 1px 2px black;
-  color: white;
+  color: $dark;
   margin: 0;
   a {
     text-decoration: none;
@@ -92,7 +92,7 @@ body {
   margin: 0 0 3em 0;
   text-align: center;
   font-size: 0.9em;
-  color: white;
+  color: $dark;
   font-weight: 100;
   font-family: 'Permanent Marker', cursive;
   text-shadow: 1px 1px 2px black;
@@ -169,8 +169,11 @@ body {
       display: inline-block;
       transition: all .4s ease-in-out;
       cursor: pointer;
+      background: $dark;
+        color: #1B4AA0;
       &:hover {
-        background: $dark;
+      background: #1B4AA0;
+        color: $dark;
       }
     }
     ::-webkit-input-placeholder { color: $dark; }
@@ -205,6 +208,7 @@ input[type="text"], textarea {
   height: 40px;
   border-radius: 4px;
   padding: 1em 2em;
+  color: $dark;
 }
 textarea {
   height: 200px;
@@ -219,10 +223,11 @@ input[type="submit"] {
   display: inline-block;
   transition: all .4s ease-in-out;
   cursor: pointer;
-  color: $dark;
+  background: $dark;
+    color: #1B4AA0;
   &:hover {
-    background: $dark;
-    color: white;
+    background: #1B4AA0;
+    color: $dark;
   }
 }
 ::-webkit-input-placeholder { color: $dark; }
